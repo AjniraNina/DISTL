@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link
+        rel="stylesheet" type="text/css" href="style.css"/>
+        <!-- google font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,500;1,600;1,800;1,900&display=swap" rel="stylesheet"/>
+
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.min.js"></script>
+        <style>
+            .hidden > div {
+                display: none;
+            }
+
+            .visible > div {
+                display: block;
+            }
+        </style>
+
+        <title>DISTL</title>
+    </head>
+    <body>
+        <main>
+            <div class="position-box">
+                <div class="text_container">
+                    <h1>What you need to know about DISTL</h1>
+                    <div>
+                        <!--div that we want to hide-->
+                        <p>We’re a Digital Agency that offers the complete suite of digital services - Branding, Design, Development, Search Engine Optimisation and Digital Marketing.</p>
+                        <p>We create quality websites and apps. Our websites are bespoke front-ends, the digital faces of businesses. Our apps range from peer-to-peer sharing platforms, to business tools, to booking engines.</p>
+
+                        <p>Our technology is primarily built in
+                            <strong>React</strong>
+                            (extending to
+                            <strong>React Native</strong>). Where the projects involves a
+                            <strong>Content Management System</strong>
+                            (CMS) we use
+                            <strong>WordPress</strong>
+                            and
+                            <strong>WooCommerce</strong>.</p>
+                        </div>
+                        </div>
+                        <div class="text_container">
+                    <h1>What it’s in it for you</h1>
+                    <div>
+                        <!--div that we want to hide-->
+                        <h2>Distl is an ideal place to cultivate your craft as a web developer.</h2>
+                        <ul>
+                            <li>You’ll be supported by a close-knit team of developers, and directly reporting to Distl’s technical lead.</li>
+                            <li>You’ll work autonomously, both independently and collaboratively on projects creating websites and applications from scratch.</li>
+                            <li>Projects constantly vary with lifecycles as short as four weeks, keeping your work fresh and challenging.</li>
+                            <li>We'll gear you up with your very own Macbook Pro!</li>
+                        </ul>
+                    </div>
+                    </div>
+                    <div class="text_container">
+                    <h1>About you</h1>
+                    <div>
+                      <h2>We’re looking for a team member that has:</h2>
+                      <ul>
+                        <li>An eagerness to learn, a passion for building on the web.</li>
+                        <li>Strong JavaScript skills, even better if these skill extend to React!</li>
+                        <li>Front-end nous. Confident with CSS3, familiar with SASS, and most importantly - an eye for style!</li>
+                        <li>(Bonus) Familiarity with PHP.</li>
+                        <li>(Bonus) Familiarity with Content Management Systems (For example, WordPress)</li>
+                        <li>(Bonus) Familiarity with noSQL databases (Firebase, MongoDB).</li>
+                      </ul>                        </div>
+</div> <div class="text_container">
+                        <h1>Contact</h1>
+                      <div>
+                        <p>If this sounds like the right place for you, <strong>Fork</strong> this Pen and style it up!</p>
+                        <p>No rules - complete creative agency. Maybe you'll give it slick corporate vibes, edgy hipster grunge, or out of this world science fiction grandeur.</p>
+                        <p>Once you're happy with your Pen, send it in an e-mail, along with your CV, portfolio, CodePen, GitHub to <a href="mailto:david@distl.com.au">david@distl.com.au</a></p>
+                        </div>
+                </div></div>
+            </main>
+
+            <footer>
+                <p>No rules - complete creative agency.</p>
+            </footer>
+
+            <script type="text/javascript">
+                $(document).ready(function () {
+                    $('.text_container').addClass("hidden");
+
+                    $('.text_container').click(function () {
+                        var $this = $(this);
+
+                        if ($this.hasClass("hidden")) {
+                            $(this).removeClass("hidden").addClass("visible");
+
+                        } else {
+                            $(this).removeClass("visible").addClass("hidden");
+                        }
+                    });
+                });
+            </script>
+        </body>
+    </body>
+</html>

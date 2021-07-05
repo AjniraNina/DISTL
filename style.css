@@ -1,0 +1,242 @@
+:root {
+    --mainColor: #fdd700; 
+  }
+html{
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+ p::selection {
+    background: #e2dd9d;
+  }
+  
+  h1::selection {
+    background: #e2dd9d;
+  }
+    
+  h2::selection {
+    background: #e2dd9d;
+  }
+  a::selection {
+    background: #e2dd9d;
+  }
+
+
+main {
+    margin: 0 auto;
+  }
+
+.intro-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 80vh;
+}
+
+.about-box {
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    margin-top:80px;
+    max-width: 600px;
+}
+
+.position-box {
+  display: flex;
+  flex-direction: column;
+  align-content: stretch;
+  margin-top:80px;
+  max-width: 600px;
+}
+
+.position-box h1{
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.intro-box h1{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 3rem;
+}
+.about-box h1{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+
+.about-box h2{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-bottom:20px;
+}
+.intro-box .options {
+    flex-wrap: wrap-reverse;
+    flex-direction: row;
+    padding:15px;
+}
+.intro-box .options a{
+font-family: 'Poppins', sans-serif;
+font-weight: 500;
+font-size: 2rem;
+margin:10px;
+color: #000000;
+flex-direction: row;
+flex-wrap: wrap;
+}
+.intro-box .options a {
+    background:
+       linear-gradient(
+         to bottom, var(--mainColor) 0%,
+         var(--mainColor) 100%
+       );
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 2px 2px;
+    color: #000;
+    text-decoration: none;
+    transition: background-size .2s;
+    width:50%;
+  }
+  .intro-box .options a:hover {
+  background-size: 4px 50px;
+}
+
+.text_container h1{
+  border-bottom: 2px solid #ffeb35;
+}
+
+.position-box h2{
+  font-size:0.8rem;
+}
+.about-box a {
+    background:
+       linear-gradient(
+         to bottom, var(--mainColor) 0%,
+         var(--mainColor) 100%
+       );
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 2px 2px;
+    color: #000;
+    text-decoration: none;
+    transition: background-size .2s;
+    width:50%;
+  }
+  
+  .about-box a:hover {
+  background-size: 4px 50px;
+}
+
+
+
+
+footer{
+    margin-top: auto;
+}
+footer p{
+    display: flex;
+    justify-content: flex-end;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem;
+}
+
+#gradient-cheer {
+	background: linear-gradient(-45deg, #ee7752, #c5f9d7,#f7d486,#f27a7d);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+	0% { 
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.intro-box p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 2rem;
+}
+.about-box p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 350;
+    font-size: 1rem;
+}
+
+.button{
+  font-family: 'Poppins', sans-serif;
+
+    background: #FFFFFF;
+    border: 2px solid #000000;
+    box-sizing: border-box;
+    border-radius: 8px;
+    max-width: 200px;
+    margin-top:10px;
+    padding:10px;
+    font-weight: 300;
+    margin: 10px;
+    font-size: 1rem;
+
+
+}
+.button p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    color: #000000;
+    margin:0;
+}
+
+.button:hover {
+    box-shadow: 0 0 11px rgba(33,33,33,.2); 
+  }
+
+.transparent-box{
+    width: 500px;
+    margin: 30px;
+    border-radius:10px;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.03);
+}
+
+canvas {
+    display: block;
+    position: relative;
+    z-index: 1;
+    pointer-events: none;
+  }
+  
+  #content {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    color: black;
+    font-size: 2rem;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+  .buttonContainer {
+    display: inline-block;
+  }
